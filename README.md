@@ -1,6 +1,6 @@
 # SHOWMe: Benchmarking Object-agnostic Hand-Object 3D Reconstruction (ICCV / ACVR 2023)
 
-[[Paper](https://europe.naverlabs.com/research/showme/)] [[Project Page](https://europe.naverlabs.com/research/showme)] [[Supplementary](https://europe.naverlabs.com/research/showme)]
+[[Paper](https://europe.naverlabs.com/research/showme/)] [[Project Page](https://europe.naverlabs.com/research/showme)]
 <!-- [[Oral Presentation](https://es.naverlabs.com/Humans-NLE/SHOWMe)]  -->
 > [Anilkumar Swamy](https://europe.naverlabs.com/people_user/anilkumar-swamy/),
 > [Vincent Lerory](https://europe.naverlabs.com/people_user/vincent-leroy/),
