@@ -1,4 +1,4 @@
-# SHOWMe: Benchmarking Object-agnostic Hand-Object 3D Reconstruction (ICCV / ACVR 2023)
+# SHOWMe: Benchmarking Object-agnostic Hand-Object 3D Reconstruction (ICCVW 2023) (ACVR Oral)
 
 [[Paper](https://europe.naverlabs.com/research/showme/)] [[Project Page](https://europe.naverlabs.com/research/showme)]
 <!-- [[Oral Presentation](https://es.naverlabs.com/Humans-NLE/SHOWMe)]  -->
@@ -11,7 +11,7 @@
 > [Matthieu Armando](https://europe.naverlabs.com/people_user/matthieu-armando/),
 > [Jean-Sebastien Franco](https://morpheo.inrialpes.fr/~franco/),
 > [Grégory Rogez](https://europe.naverlabs.com/people_user/gregory-rogez/)       
-> *ACVR workshop at ICCV 2023*
+> *ICCVW 2023*
 
 This repository contains the link for downloading and code for visualizing SHOWMe Hand-Object dataset.
 
@@ -25,14 +25,20 @@ This repository contains the link for downloading and code for visualizing SHOWM
 }
 ```
 
-## Dataset Download
-### [Link](https://download.europe.naverlabs.com/showme)
-
-## News
+# News
+- [x] Baseline 3D Recnostructions and Camera Poses for **quantitative** and **qualitative** comparison 
 - [x] Dataset Release
 - [x] Visualization Scripts Release
 
-## Scripts 
+# Dataset Download
+### [Link](https://download.europe.naverlabs.com/showme)
+
+# 3D recnostruction models and Camera Poses
+```To make qualitative and quantitative comparison easier, we release all sequence best baseline 3D reconstruction model(mesh files) and the corresponding camera poses```
+### [ReconstructedMeshes_and_CameraPoses]()
+
+
+# Scripts 
 - [x] To print all sequence ids 
 - [x] To visualize RGB frame 
 - [x] To visualize RGBD frame 
@@ -42,9 +48,9 @@ This repository contains the link for downloading and code for visualizing SHOWM
 - [x] To visualize pixel-aligned depth point clouds 
 - [x] To render semantic maps (render mano hand and object mesh)
 
-## Running Scripts 
+# Running Scripts 
 
-### Install
+## Install
 Our code is running using python3.7 and requires the following packages:
 - pytorch-1.7.1+cu110
 - pytorch3d-0.3.0
@@ -53,12 +59,12 @@ Our code is running using python3.7 and requires the following packages:
 - trimesh
 - matplotlib
 
-### Display all sequence ids
+## Display all sequence ids
 ```bash
 python scripts/dataset_info.py --datadir <dataset_directory_path> 
 ```
 
-### Visualize 
+## Visualize 
 ```bash
 python scripts/vis_showme.py --vis_type <visualization_type> --datadir <dataset_directory_path> --depth_datadir <depth_dataset_directory_path> --seq_id <sequence_id> --frm_no <frame_number>
 ```
@@ -66,7 +72,7 @@ Arguments help:
 
 - ```<vis_type>```: visualization type argument ( ```rgb``` or ```rgbd``` or ```depth``` or ```ho_mesh``` or ```obj_mesh``` or ```mano_mesh``` or ```proj_verts``` or ```pix_algnd_depth```  )
 
-### Render (renders mano hand and object)
+## Render (renders mano hand and object)
 ```bash
 python scripts/render.py --datadir <dataset_directory_path> --outdir <output_dir_tosave_rendered_images> --seq_id <sequence_id>
 ```
