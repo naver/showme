@@ -15,6 +15,12 @@
 
 This repository contains the link for downloading and code for visualizing SHOWMe Hand-Object dataset.
 
+## RGBs Mosaic
+![RGBs Mosaic](imgs/mosaic.png)
+
+## Dataset Information
+![Dataset Comparison](imgs/image.png)
+
 ## Citation
 ```bibtex
 @inproceedings{showme,
